@@ -1,7 +1,8 @@
 from rest_framework.routers import SimpleRouter
 from .views import (
-  DisciplinaViewSet
+  DisciplinaViewSet, CardViewSet
 )
 
 router = SimpleRouter()
 router.register('disciplina', DisciplinaViewSet)
+router.register('card', CardViewSet)
