@@ -4,5 +4,5 @@ from .views import (
 )
 
 router = SimpleRouter()
-router.register('disciplina', DisciplinaViewSet)
-router.register('card', CardViewSet)
+router.register('disciplina', DisciplinaViewSet, basename='disciplina')
+router.register('card', CardViewSet, basename='card')

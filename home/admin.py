@@ -7,4 +7,4 @@ class DisciplinaAdmin(admin.ModelAdmin):
 
 @admin.register(Card)
 class CardAdmin(admin.ModelAdmin):
-  list_display = ('question', 'response', 'disciplina')
+  list_display = ('id', 'question', 'response', 'disciplina')

@@ -9,4 +9,4 @@ class CardSerializer(serializers.ModelSerializer):
   disciplina = serializers.PrimaryKeyRelatedField(queryset=Disciplina.objects.all())
   class Meta:
     model = Card
-    fields = ('question', 'response', 'disciplina')
+    fields = ('id', 'question', 'response', 'disciplina')

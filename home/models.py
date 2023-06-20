@@ -10,4 +10,7 @@ class Disciplina(models.Model):
 class Card(models.Model):
   question = models.CharField(max_length=80)
   response = models.CharField(max_length=100)
-  disciplina = models.OneToOneField(Disciplina, on_delete=models.CASCADE, null=True)
+  disciplina = models.ForeignKey(Disciplina, on_delete=models.CASCADE, null=True)
+
+  def __str__(self):
+    return self.question
